@@ -1,0 +1,40 @@
+{
+  "name": "orange-hrm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cypress-xpath": "^1.6.2"
+  },
+  "scripts": {
+    "clean-results": "rm -rf cypress/reports/",
+    "generate-report": "node ./cucumber-report-config.js",
+    "tests": "npm run clean-results; npx cypress run --spec cypress/integration/features/scenarios/*.feature --browser chrome --headed; npm run generate-report",
+    "headless": "npm run clean-results; npx cypress run --spec cypress/integration/features/scenarios/*.feature --browser chrome --headless; npm run generate-report"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.0",
+    "cypress": "^13.6.3",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "typescript": "5.3.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/integration/features/step_definitions/*.ts",
+      "cypress/integration/features/step_definitions/**/*.ts"
+    ],
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html/cucumber-report.html"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
+    },
+    "nonGlobalStepDefinitions": true
+  }
+}

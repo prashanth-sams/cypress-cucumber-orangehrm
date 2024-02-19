@@ -1,0 +1,11 @@
+{
+    "name": "chrome",
+    "family": "chromium",
+    "channel": "stable",
+    "displayName": "Chrome",
+    "version": "121.0.6167.184",
+    "minSupportedVersion": 64,
+    "majorVersion": "121",
+    "isHeadless": false,
+    "isHeaded": true
+  }

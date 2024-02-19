@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": true,
+    "types": [
+      "cypress"
+    ],
+    // "noEmit": true,
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["es2019", "dom"],
+    "outDir": "build/dist",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "cypress/integration/features/**/*.*",
+    "cypress/support/*.ts"
+  ]
+}

@@ -1,0 +1,215 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orangehrm-web-automation;registered-user-should-be-able-to-successfully-login-into-the-admin-panel",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Registered user should be able to successfully login into the admin panel",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the \"Orange Hrm\" portal",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9371000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I login \"Orange Hrm\" portal",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3750000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be able to see the \"Dashboard\" page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orangehrm-web-automation;user-should-be-able-to-go-to-my-info-page-and-verify-and-update-their-date-of-birth-field.",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "User should be able to go to My Info page and verify and update their Date of Birth field.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the \"Orange Hrm\" portal",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1091000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I navigate to the \"My Info\" page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should be able to see the \"My Info\" page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should be able to verify and update the Date of Birth field",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1194000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@info",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orangehrm-web-automation;user-should-be-able-to-logout-from-the-admin-panel",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "User should be able to logout from the admin panel",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the \"Orange Hrm\" portal",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I logout from the admin panel",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should be able to see the \"Login\" page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "orangehrm-web-automation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "OrangeHRM Web Automation",
+    "tags": [],
+    "uri": "cypress/integration/features/scenarios/orangehrm.feature"
+  }
+]

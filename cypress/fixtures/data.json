@@ -1,0 +1,8 @@
+{   
+    "title": "OrangeHRM",
+    "login": {
+        "username": "admin",
+        "password": "admin123"
+    },
+    "dob": "1994-27-03"
+}

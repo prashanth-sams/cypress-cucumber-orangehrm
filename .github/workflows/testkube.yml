@@ -2,7 +2,7 @@ name: Trigger the 'cypresstests' Test Workflow on Testkube
 
 on:
   pull_request:
-    branches: [master]
+    branches: [ master ]
 
 jobs:
   run-test:

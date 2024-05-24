@@ -1,0 +1,18 @@
+name: Trigger the 'cypresstests' Test Workflow on Testkube
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: kubeshop/setup-testkube@v1
+      with:
+        organization: tkcorg_95a5eaec37266d5b
+        environment: tkcenv_2ffcf51bb77f165f
+        token: ${{ secrets.TK_API_TOKEN }}
+    - run: |
+        testkube run testworkflow cypresstests -f
+    

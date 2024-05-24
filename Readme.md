@@ -1,4 +1,4 @@
-# Deriv | Web Automation Tests
+# Cypress Web Automation | Typescript
 
 ### Installation & Runners
 

@@ -15,4 +15,3 @@ jobs:
         token: ${{ secrets.TK_API_TOKEN }}
     - run: |
         testkube run testworkflow cypresstests -f
-    
